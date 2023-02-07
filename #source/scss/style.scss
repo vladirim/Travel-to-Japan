@@ -92,11 +92,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 //<ОСНОВНАЯ СЕТКА>
 .container {
-	max-width: $mw+px;
-	margin: 0 auto;
-	width: 100%;
-	@media (max-width:$md2+px) {max-width: 750px;}
-	@media (max-width:$md3+px) {max-width: none; padding: 0 10px;}
+	// max-width: $mw+px;
+	// margin: 0 auto;
+	// width: 100%;
+	// @media (max-width:$md2+px) {max-width: 750px;}
+	// @media (max-width:$md3+px) {max-width: none; padding: 0 10px;}
 }
 //</ОСНОВНАЯ СЕТКА>
 
