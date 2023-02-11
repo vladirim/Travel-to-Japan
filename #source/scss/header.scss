@@ -1,0 +1,33 @@
+.header {
+    height: var(--nav-vertical-size);
+    background: url(../../img/hero_block/01.jpg) no-repeat top;
+}
+.header-container {
+    @include flexbox();
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 56px 0px 0px 0px;
+}
+.header__list {
+    @include flexbox();
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__item {
+    margin: 0px 82px 0px 0px;
+    &:last-child{
+        margin: 0;
+    }
+}
+.item__link {
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    &:active{
+        opacity: 0.75;
+    }
+    &:hover{
+        opacity: 0.75;
+    }
+}
+
