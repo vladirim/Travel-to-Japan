@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   height: var(--nav-vertical-size);
-  background: url(../../img/hero_block/01.jpg) no-repeat top;
+  background: url(/img/hero_block/01.jpg) no-repeat top;
 }
 
 .header-container {
@@ -138,8 +138,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
   min-height: calc(100vh - var(--nav-vertical-size));
-  background: url(../../img/hero_block/01.jpg) no-repeat center;
+  background: url(/img/hero_block/01.jpg) no-repeat center;
   background-position: center calc(-1 * var(--nav-vertical-size));
+  padding: 0px 0px 430px 0px;
 }
 
 .hero-container {
@@ -186,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   color: #FFFFFF;
   border-bottom: 2px solid #BFC0C5;
-  margin: 0px 61px 40px 0px;
+  margin: 0px 61px 0px 0px;
 }
 
 .hero__input::-webkit-input-placeholder {
@@ -232,8 +233,91 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
-  margin: 0px 0px 40px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .hero__btn:hover {
   background-color: #0f468e;
+}
+
+.benefits {
+  background-color: #FFFFFF;
+}
+
+.benefits-container {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 0px 100px;
+  -webkit-box-shadow: 0px 2px 20px rgba(21, 34, 36, 0.16);
+          box-shadow: 0px 2px 20px rgba(21, 34, 36, 0.16);
+  position: relative;
+}
+
+.benefits__title {
+  width: 100%;
+  font-size: 35px;
+  line-height: 42px;
+  color: #102746;
+  padding: 93px 0px 120px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-color: #FFFFFF;
+}
+
+.benefits__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 0px 112px 0px;
+}
+
+.benefits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 317px;
+  margin: 0px 55px 0px 0px;
+}
+.benefits__item:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.benefits-item__logo {
+  margin: 0px 0px 37px 0px;
+}
+
+.benefits-item__title {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0px 0px 26px 0px;
+}
+
+.benefits-item__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0px 0px 39px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.benefits-item__btn {
+  text-transform: uppercase;
+  color: #006DFE;
+  font-size: 16px;
+  line-height: 24px;
+  background: url(/img/benefits_block/icons/04.svg) no-repeat center;
 }
