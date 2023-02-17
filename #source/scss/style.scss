@@ -97,7 +97,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 //<HERO BLOCK>
 .hero {
 	min-height: calc(100vh - var(--nav-vertical-size));
-	background: url("/img/hero_block/01.jpg") no-repeat center;
+	background: url("../../img/hero_block/01.jpg") no-repeat center;
 	background-position: center calc(-1 * var(--nav-vertical-size));
 	padding: 0px 0px 430px 0px;
 }
@@ -128,7 +128,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .hero__input{
 	width: 297px;
-	background: transparent url("/img/hero_block/icons/01.svg") no-repeat left 8px;
+	background: transparent url("../../img/hero_block/icons/01.svg") no-repeat left 8px;
 	padding: 0px 0px 22px 43px;
 	background-size: 20px;
 	font-weight: 500;
@@ -216,15 +216,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	flex: 1 1 100%;
 }
 .blue-link {
+	display: block;
 	width: 170px;
 	text-transform: uppercase;
 	color: #006DFE;
 	font-size: 16px;
 	line-height: 24px;
 	transition: .2s all;
-	background: url("/img/benefits_block/icons/04.svg") no-repeat 95% center;
+	background: url("../../img/benefits_block/icons/04.svg") no-repeat 95% center;
 	&:hover, &:focus, &:active {
-		background: url("/img/benefits_block/icons/04.svg") no-repeat right center;
+		background: url("../../img/benefits_block/icons/04.svg") no-repeat right center;
 	}
 }
 //</BENEFITS BLOCK>
@@ -232,9 +233,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 //<INSPIRATION BLOCK>
 .inspiration {
 	margin-bottom: 131px
-}
-.inspiration-container {
-
 }
 .inspiration__header {
 	@include flexbox();
@@ -263,9 +261,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .inspiration__link {
 	width: 141px;
-	background: url("/img/benefits_block/icons/04.svg") no-repeat 95% center;
+	background: url("../../img/benefits_block/icons/04.svg") no-repeat 95% center;
 	&:hover, &:focus, &:active {
-		background: url("/img/benefits_block/icons/04.svg") no-repeat right center;
+		background: url("../../img/benefits_block/icons/04.svg") no-repeat right center;
 	}
 }
 .inspiration__cards {
@@ -326,6 +324,46 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	z-index: 5;
 }
 //</INSPIRATION BLOCK>
+
+//<PREFECTURE BLOCK>
+.prefecture {
+	margin: 0px 0px 139px 0px;
+}
+.prefecture-container {
+}
+.prefecture-column {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 0 108px;
+	align-items: center;
+	margin: 0px 0px 77px 0px ;
+}
+.prefecture__info {
+	padding: 0px 0px 0px 45px;
+}
+.prefecture__title {
+	font-size: 30px;
+	line-height: 40px;
+	color: #102746;
+	margin: 0px 0px 85px 0px;
+}
+.prefecture__text {
+	font-size: 16px;
+	line-height: 24px;
+	color: #102746;
+	margin: 0px 0px 58px 0px;
+}
+.prefecture-column__link {
+	width: 220px;
+	&--2{
+		width: 250px;
+	}
+}
+//</PREFECTURE BLOCK>
+
+//<TOP-PLCAES BLOCK>
+
+//</TOP-PLCAES BLOCK>
 //===================================================
 //</ОСНОВНОЙ БЛОК>
 

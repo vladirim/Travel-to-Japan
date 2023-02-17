@@ -1,6 +1,6 @@
 .header {
     height: var(--nav-vertical-size);
-    background: url("/img/hero_block/01.jpg") no-repeat top;
+    background: url("../../img/hero_block/01.jpg") no-repeat top;
 }
 .header-container {
     @include flexbox();
