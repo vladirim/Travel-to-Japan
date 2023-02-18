@@ -523,6 +523,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  cursor: pointer;
 }
 
 .top-places__card:hover .top-card__img {
@@ -648,4 +649,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 .top-card__btn:hover {
   background-color: #0f468e;
+}
+
+.video {
+  width: 100%;
+}
+
+.video-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video__frame {
+  padding-top: 56.25%;
+}
+
+.video__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
