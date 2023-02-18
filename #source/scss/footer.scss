@@ -1,0 +1,37 @@
+.footer {
+    background-color: #0E1D28;
+    padding: 119px 0px;
+}
+.footer-container {
+    @include flexbox();
+}
+.footer__logo {
+    flex: 1 1 50%;
+}
+.footer__nav {
+    @include flexbox();
+}
+.footer__menu {
+    flex: 1 1 33.333%;
+    margin: 0px 140px 0px 0px;
+    &:last-child {
+        margin: 0;
+    }
+}
+.footer-menu__item {
+    min-width: 101px;
+    margin: 0px 0px 3px 0px;
+}
+.footer-menu__link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    &:hover {
+        color: #8d8c8c;
+    }
+}
+.footer-menu__link--subtitle{
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}

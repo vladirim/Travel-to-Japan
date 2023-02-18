@@ -136,6 +136,61 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.75;
 }
 
+.footer {
+  background-color: #0E1D28;
+  padding: 119px 0px;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+}
+
+.footer__logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+}
+
+.footer__menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+  margin: 0px 140px 0px 0px;
+}
+.footer__menu:last-child {
+  margin: 0;
+}
+
+.footer-menu__item {
+  min-width: 101px;
+  margin: 0px 0px 3px 0px;
+}
+
+.footer-menu__link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.footer-menu__link:hover {
+  color: #8d8c8c;
+}
+
+.footer-menu__link--subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
 .hero {
   min-height: calc(100vh - var(--nav-vertical-size));
   background: url("../img/hero_block/01.jpg") no-repeat center;
