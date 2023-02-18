@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   height: var(--nav-vertical-size);
-  background: url("../../img/hero_block/01.jpg") no-repeat top;
+  background: url("../img/hero_block/01.jpg") no-repeat top;
 }
 
 .header-container {
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
   min-height: calc(100vh - var(--nav-vertical-size));
-  background: url("../../img/hero_block/01.jpg") no-repeat center;
+  background: url("../img/hero_block/01.jpg") no-repeat center;
   background-position: center calc(-1 * var(--nav-vertical-size));
   padding: 0px 0px 430px 0px;
 }
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero__input {
   width: 297px;
-  background: transparent url("../../img/hero_block/icons/01.svg") no-repeat left 8px;
+  background: transparent url("../img/hero_block/icons/01.svg") no-repeat left 8px;
   padding: 0px 0px 22px 43px;
   background-size: 20px;
   font-weight: 500;
@@ -327,10 +327,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
-  background: url("../../img/benefits_block/icons/04.svg") no-repeat 95% center;
+  background: url("../img/benefits_block/icons/04.svg") no-repeat 95% center;
 }
 .blue-link:hover, .blue-link:focus, .blue-link:active {
-  background: url("../../img/benefits_block/icons/04.svg") no-repeat right center;
+  background: url("../img/benefits_block/icons/04.svg") no-repeat right center;
 }
 
 .inspiration {
@@ -374,10 +374,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .inspiration__link {
   width: 141px;
-  background: url("../../img/benefits_block/icons/04.svg") no-repeat 95% center;
+  background: url("../img/benefits_block/icons/04.svg") no-repeat 95% center;
 }
 .inspiration__link:hover, .inspiration__link:focus, .inspiration__link:active {
-  background: url("../../img/benefits_block/icons/04.svg") no-repeat right center;
+  background: url("../img/benefits_block/icons/04.svg") no-repeat right center;
 }
 
 .inspiration__cards {
@@ -498,10 +498,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 250px;
 }
 
-.top-places__title {
-  margin: 0px 0px 58px 0px;
-}
-
 .top-places {
   margin: 0px 0px 86px 0px;
 }
@@ -551,6 +547,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   font-size: 28px;
+  letter-spacing: 1.5px;
   margin: 0px 0px 30px 0px;
 }
 
@@ -616,7 +613,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   color: #FFFFFF;
   padding: 0px 20px 0px 0px;
-  background: url(../../img/top-places_block/icons/01.svg) no-repeat right;
+  background: url("../img/top-places_block/icons/01.svg") no-repeat right;
   margin: 0px 14px 0px 0px;
 }
 
@@ -625,7 +622,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   color: #FFFFFF;
   padding: 0px 23px 0px 0px;
-  background: url(../../img/top-places_block/icons/02.svg) no-repeat right;
+  background: url("../img/top-places_block/icons/02.svg") no-repeat right;
 }
 
 .top-card__text {

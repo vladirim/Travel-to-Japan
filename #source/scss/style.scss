@@ -97,7 +97,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 //<HERO BLOCK>
 .hero {
 	min-height: calc(100vh - var(--nav-vertical-size));
-	background: url("../../img/hero_block/01.jpg") no-repeat center;
+	background: url("../img/hero_block/01.jpg") no-repeat center;
 	background-position: center calc(-1 * var(--nav-vertical-size));
 	padding: 0px 0px 430px 0px;
 }
@@ -128,7 +128,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .hero__input{
 	width: 297px;
-	background: transparent url("../../img/hero_block/icons/01.svg") no-repeat left 8px;
+	background: transparent url("../img/hero_block/icons/01.svg") no-repeat left 8px;
 	padding: 0px 0px 22px 43px;
 	background-size: 20px;
 	font-weight: 500;
@@ -223,9 +223,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-size: 16px;
 	line-height: 24px;
 	transition: .2s all;
-	background: url("../../img/benefits_block/icons/04.svg") no-repeat 95% center;
+	background: url("../img/benefits_block/icons/04.svg") no-repeat 95% center;
 	&:hover, &:focus, &:active {
-		background: url("../../img/benefits_block/icons/04.svg") no-repeat right center;
+		background: url("../img/benefits_block/icons/04.svg") no-repeat right center;
 	}
 }
 //</BENEFITS BLOCK>
@@ -261,9 +261,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .inspiration__link {
 	width: 141px;
-	background: url("../../img/benefits_block/icons/04.svg") no-repeat 95% center;
+	background: url("../img/benefits_block/icons/04.svg") no-repeat 95% center;
 	&:hover, &:focus, &:active {
-		background: url("../../img/benefits_block/icons/04.svg") no-repeat right center;
+		background: url("../img/benefits_block/icons/04.svg") no-repeat right center;
 	}
 }
 .inspiration__cards {
@@ -363,15 +363,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	}
 }
 //</PREFECTURE BLOCK>
-.top-places__title {
-	margin: 0px 0px 58px 0px;
-}
 
 //<TOP-PLACES BLOCK>
 .top-places {
 	margin: 0px 0px 86px 0px;
-}
-.top-places-container {
 }
 .top-places__title {
 	margin: 0px 0px 54px 0px;
@@ -397,6 +392,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .top-places__card:hover .top-card__title{
 	flex: 0 0 auto;
 	font-size: 28px;
+	letter-spacing: 1.5px;
 	margin: 0px 0px 30px 0px;
 }
 .top-places__card:hover .top-card-likes{
@@ -443,19 +439,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	line-height: 24px;
 	color: #FFFFFF;
 	padding: 0px 20px 0px 0px;
-	background: url(../../img/top-places_block/icons/01.svg) no-repeat right;
+	background: url("../img/top-places_block/icons/01.svg") no-repeat right;
 	margin: 0px 14px 0px 0px;
-}
-.top-card-likes__value {
 }
 .top-card__comments {
 	font-size: 16px;
 	line-height: 24px;
 	color: #FFFFFF;
 	padding: 0px 23px 0px 0px;
-	background: url(../../img/top-places_block/icons/02.svg) no-repeat right;
-}
-.top-card-comments__value {
+	background: url("../img/top-places_block/icons/02.svg") no-repeat right;
 }
 .top-card__text {
 	font-weight: 400;
@@ -478,8 +470,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		background-color: #0f468e;
 	}
 }
-
 //</TOP-PLACES BLOCK>
+
+//<VIDEO BLOCK>
+
+//</VIDEO BLOCK>
 //===================================================
 //</ОСНОВНОЙ БЛОК>
 
