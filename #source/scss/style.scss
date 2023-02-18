@@ -97,7 +97,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 //<HERO BLOCK>
 .hero {
 	min-height: calc(100vh - var(--nav-vertical-size));
-	background: url("../../img/hero_block/01.jpg") no-repeat center;
+	background: url("../img/hero_block/01.jpg") no-repeat center;
 	background-position: center calc(-1 * var(--nav-vertical-size));
 	padding: 0px 0px 430px 0px;
 }
@@ -128,7 +128,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .hero__input{
 	width: 297px;
-	background: transparent url("../../img/hero_block/icons/01.svg") no-repeat left 8px;
+	background: transparent url("../img/hero_block/icons/01.svg") no-repeat left 8px;
 	padding: 0px 0px 22px 43px;
 	background-size: 20px;
 	font-weight: 500;
@@ -223,9 +223,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-size: 16px;
 	line-height: 24px;
 	transition: .2s all;
-	background: url("../../img/benefits_block/icons/04.svg") no-repeat 95% center;
+	background: url("../img/benefits_block/icons/04.svg") no-repeat 95% center;
 	&:hover, &:focus, &:active {
-		background: url("../../img/benefits_block/icons/04.svg") no-repeat right center;
+		background: url("../img/benefits_block/icons/04.svg") no-repeat right center;
 	}
 }
 //</BENEFITS BLOCK>
@@ -261,9 +261,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .inspiration__link {
 	width: 141px;
-	background: url("../../img/benefits_block/icons/04.svg") no-repeat 95% center;
+	background: url("../img/benefits_block/icons/04.svg") no-repeat 95% center;
 	&:hover, &:focus, &:active {
-		background: url("../../img/benefits_block/icons/04.svg") no-repeat right center;
+		background: url("../img/benefits_block/icons/04.svg") no-repeat right center;
 	}
 }
 .inspiration__cards {
@@ -346,6 +346,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	line-height: 40px;
 	color: #102746;
 	margin: 0px 0px 85px 0px;
+	&:last-child {
+		margin: 0px 0ApES0px 0px;
+	}
 }
 .prefecture__text {
 	font-size: 16px;
@@ -361,9 +364,117 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 //</PREFECTURE BLOCK>
 
-//<TOP-PLCAES BLOCK>
+//<TOP-PLACES BLOCK>
+.top-places {
+	margin: 0px 0px 86px 0px;
+}
+.top-places__title {
+	margin: 0px 0px 54px 0px;
+}
+.top-places__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 57px;
+}
+.top-places__card {
+	@include flexbox();
+	flex-direction: column;
+}
+.top-places__card:hover .top-card__img{
+	transform: scale(1.1);
+}
+.top-places__card:hover .top-card__stats{
+	top: 0;
+	left: 0;
+	flex-direction: column;
+	justify-content: center;
+}
+.top-places__card:hover .top-card__title{
+	flex: 0 0 auto;
+	font-size: 28px;
+	letter-spacing: 1.5px;
+	margin: 0px 0px 30px 0px;
+}
+.top-places__card:hover .top-card-likes{
+	font-size: 20px;
+	padding: 0px 27px 0px 0px;
+	margin: 0px 0px 16px 0px;
+}
+.top-places__card:hover .top-card__comments{
+	font-size: 20px;
+	padding: 0px 30px 0px 0px;
+}
+.top-card__picture {
+	position: relative;
+	overflow: hidden;
+	margin: 0px 0px 45px 0px;
+}
+.top-card__img {
+	width: 100%;
+	height: 386px;
+	object-fit: cover;
+	transition: .2s;
+}
+.top-card__stats {
+	@include flexbox();
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(21, 24, 36, 0.6);
+	padding: 16px 25px;
+	transition: .3s;
+}
+.top-card__title {
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 24px;
+	color: #FFFFFF;
+	flex: 1 1 100%;
+}
+.top-card-likes {
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+	padding: 0px 20px 0px 0px;
+	background: url("../img/top-places_block/icons/01.svg") no-repeat right;
+	margin: 0px 14px 0px 0px;
+}
+.top-card__comments {
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+	padding: 0px 23px 0px 0px;
+	background: url("../img/top-places_block/icons/02.svg") no-repeat right;
+}
+.top-card__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #102746;
+	margin: 0px 0px 31px 0px;
+	flex: 1 1 auto;
+}
+.top-card__btn {
+	max-width: 118px;
+	text-transform: uppercase;
+	padding: 11px 19px;
+	background-color: #1B7DFF;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	&:hover{
+		background-color: #0f468e;
+	}
+}
+//</TOP-PLACES BLOCK>
 
-//</TOP-PLCAES BLOCK>
+//<VIDEO BLOCK>
+
+//</VIDEO BLOCK>
 //===================================================
 //</ОСНОВНОЙ БЛОК>
 
